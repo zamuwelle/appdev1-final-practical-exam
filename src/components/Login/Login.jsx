@@ -7,7 +7,8 @@ function Login() {
   return (
     <main className={styles.signup}>
       <section className={styles.leftSection}>
-        <h1 className={styles.title}>Get Started Now</h1>
+        <h1 className={styles.title}>Welcome back!</h1>
+        <p className={styles.subtitle}>Enter your Credentials to access your account</p>
         <form className={styles.form}>
           <div className={styles.field}>
             <label htmlFor="signup-name">Name</label>
@@ -64,7 +65,7 @@ function Login() {
             </button>
           </div>
           <p className={styles.account}>
-            Have an account? <a className={styles.signIn} href="/login">Sign In</a>
+            Have an account? <a className={styles.signIn} href="/signup">Sign In</a>
           </p>
         </div>
       </section>

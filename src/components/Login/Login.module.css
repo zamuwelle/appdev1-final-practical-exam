@@ -19,7 +19,7 @@
 }
 
 .leftSection {
-  padding: 124px 0 0 175px;
+  padding: 152px 0 0 175px;
 }
 
 .title {
@@ -29,6 +29,15 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 48px;
+}
+
+.subtitle {
+  margin: 5.1px 0 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .form {
