@@ -11,43 +11,34 @@ function Login() {
         <p className={styles.subtitle}>Enter your Credentials to access your account</p>
         <form className={styles.form}>
           <div className={styles.field}>
-            <label htmlFor="signup-name">Name</label>
+            <label htmlFor="login-email">Email address</label>
             <input
               className={styles.input}
-              id="signup-name"
-              name="name"
-              type="text"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div className={styles.field}>
-            <label htmlFor="signup-email">Email address</label>
-            <input
-              className={styles.input}
-              id="signup-email"
+              id="login-email"
               name="email"
               type="email"
               placeholder="Enter your email"
             />
           </div>
           <div className={styles.field}>
-            <label htmlFor="signup-password">Password</label>
+            <div className={styles.passwordHeading}>
+              <label htmlFor="login-password">Password</label>
+              <a className={styles.forgotPassword} href="#">forgot password</a>
+            </div>
             <input
               className={styles.input}
-              id="signup-password"
+              id="login-password"
               name="password"
               type="password"
               placeholder="Name"
             />
           </div>
           <label className={styles.terms}>
-            <input className={styles.checkbox} name="terms" type="checkbox" />
-            <span>
-              I agree to the <span className={styles.termsLink}>terms &amp; policy</span>
-            </span>
+            <input className={styles.checkbox} name="remember" type="checkbox" />
+            <span>Remember for 30 days</span>
           </label>
           <div className={styles.submitArea}>
-            <button className={styles.submitButton} type="button">Signup</button>
+            <button className={styles.submitButton} type="button">Login</button>
           </div>
         </form>
         <div className={styles.bottomSection}>
