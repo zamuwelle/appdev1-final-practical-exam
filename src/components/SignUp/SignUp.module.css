@@ -1,0 +1,34 @@
+:global(body) {
+  margin: 0;
+}
+
+.signup {
+  display: grid;
+  grid-template-columns: minmax(0, 650fr) minmax(0, 828fr);
+  min-height: 100svh;
+  padding: 78px 58px 28px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.leftSection,
+.rightSection {
+  min-width: 0;
+}
+
+.blossom {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .signup {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+  }
+
+  .leftSection {
+    display: none;
+  }
+}
