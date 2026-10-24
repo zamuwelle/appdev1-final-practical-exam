@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-
-:global(body) {
-  margin: 0;
-}
-
 .signup {
   display: grid;
   grid-template-columns: minmax(0, 650fr) minmax(0, 828fr);
   min-height: 100svh;
-  padding: 78px 58px 28px 0;
+  padding: var(--page-top-padding) var(--page-right-padding) var(--page-bottom-padding) 0;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: var(--color-background);
 }
 
 .leftSection,
@@ -19,45 +13,45 @@
 }
 
 .leftSection {
-  padding: 152px 0 0 175px;
+  padding: 152px 0 0 var(--page-side-inset);
 }
 
 .title {
   margin: 0;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 48px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-title);
 }
 
 .subtitle {
   margin: 5.1px 0 0;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-subtitle);
 }
 
 .form {
-  width: 404px;
+  width: var(--form-width);
   max-width: 100%;
-  margin-top: 62.528px;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  margin-top: var(--form-top-gap);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
 }
 
 .field + .field {
-  margin-top: 24.698px;
+  margin-top: var(--field-gap);
 }
 
 .passwordHeading {
@@ -68,55 +62,55 @@
 
 .forgotPassword {
   margin-right: 5px;
-  color: #0f3dde;
-  font-size: 10px;
-  line-height: 15px;
+  color: var(--color-link);
+  font-size: var(--font-size-input);
+  line-height: var(--line-height-input);
   text-decoration: none;
 }
 
 .input {
   width: 100%;
-  height: 32px;
-  padding: 0 9px;
+  height: var(--control-height);
+  padding: 0 var(--input-padding-inline);
   box-sizing: border-box;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #000;
+  border: 1px solid var(--color-border);
+  border-radius: var(--control-radius);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font: inherit;
-  font-size: 10px;
-  line-height: 15px;
+  font-size: var(--font-size-input);
+  line-height: var(--line-height-input);
 }
 
 .input::placeholder {
-  color: #d9d9d9;
+  color: var(--color-border);
   opacity: 1;
 }
 
 .terms {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 24.698px;
-  font-size: 9px;
-  line-height: 13.5px;
+  gap: var(--checkbox-label-gap);
+  margin-top: var(--field-gap);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
   cursor: pointer;
 }
 
 .checkbox {
   appearance: none;
   flex-shrink: 0;
-  width: 9px;
-  height: 10px;
+  width: var(--checkbox-width);
+  height: var(--checkbox-height);
   margin: 0;
-  border: 1px solid #000;
-  border-radius: 2px;
+  border: 1px solid var(--color-text);
+  border-radius: var(--checkbox-radius);
   cursor: pointer;
 }
 
 .checkbox:checked {
-  border-color: #3a5b22;
-  background-color: #3a5b22;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .checkbox:checked::after {
@@ -125,29 +119,29 @@
   width: 2px;
   height: 5px;
   margin-left: 2px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-right: 1px solid var(--color-background);
+  border-bottom: 1px solid var(--color-background);
   transform: rotate(45deg);
 }
 
 .submitArea {
-  height: 35.019px;
-  margin-top: 31.368px;
-  background-color: #edf2f7;
+  height: var(--submit-track-height);
+  margin-top: var(--submit-top-gap);
+  background-color: var(--color-submit-track);
 }
 
 .submitButton {
   width: 100%;
-  height: 32px;
-  padding: 0 0 0 13px;
-  border: 1px solid #3a5b22;
-  border-radius: 10px;
-  background-color: #3a5b22;
-  color: #fff;
+  height: var(--control-height);
+  padding: 0 0 0 var(--submit-text-inset);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--control-radius);
+  background-color: var(--color-primary);
+  color: var(--color-background);
   font-family: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 19.5px;
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-button);
   cursor: pointer;
 }
 
@@ -156,26 +150,26 @@
 .forgotPassword:focus-visible,
 .submitButton:focus-visible,
 .socialButton:focus-visible {
-  outline: 2px solid #3a5b22;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
 .bottomSection {
-  width: 404px;
+  width: var(--form-width);
   max-width: 100%;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
 }
 
 .divider {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 14px;
-  margin-top: 59.094px;
-  font-size: 9px;
-  line-height: 14px;
+  height: var(--divider-height);
+  margin-top: var(--divider-top-gap);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-divider);
 }
 
 .divider::before {
@@ -184,13 +178,13 @@
   top: 7px;
   right: 1px;
   left: 3px;
-  border-top: 2px solid #f5f5f5;
+  border-top: 2px solid var(--color-divider);
 }
 
 .divider span {
   position: relative;
-  width: 20px;
-  background-color: #fff;
+  width: var(--divider-label-width);
+  background-color: var(--color-background);
   text-align: center;
   transform: translateX(1px);
 }
@@ -198,29 +192,29 @@
 .socialButtons {
   display: flex;
   align-items: flex-start;
-  gap: 23px;
-  width: 403px;
+  gap: var(--social-button-gap);
+  width: var(--social-row-width);
   max-width: 100%;
-  margin-top: 61.396px;
+  margin-top: var(--social-top-gap);
 }
 
 .socialButton {
   display: flex;
   align-items: center;
-  flex: 0 1 190px;
-  gap: 10px;
+  flex: 0 1 var(--social-button-width);
+  gap: var(--social-content-gap);
   min-width: 0;
-  height: 32px;
+  height: var(--control-height);
   box-sizing: border-box;
-  padding: 0 19px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #000;
+  padding: 0 var(--social-button-inset);
+  border: 1px solid var(--color-border);
+  border-radius: var(--control-radius);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: inherit;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
+  font-size: var(--font-size-social);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-social);
   white-space: nowrap;
   cursor: pointer;
 }
@@ -230,25 +224,25 @@
 }
 
 .appleButton {
-  padding-left: 23px;
+  padding-left: var(--apple-button-inset);
 }
 
 .socialIcon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
 }
 
 .account {
-  margin: 22px 0 0;
-  font-size: 14px;
-  line-height: 21px;
+  margin: var(--account-top-gap) 0 0;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
   text-align: center;
 }
 
 .signIn {
-  margin-left: 4px;
-  color: #0f3dde;
+  margin-left: var(--account-link-gap);
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -261,16 +255,16 @@
 @media (max-width: 767px) {
   .signup {
     grid-template-columns: 1fr;
-    padding: 24px 16px;
+    padding: var(--mobile-page-block-padding) var(--mobile-page-inline-padding);
   }
 
   .leftSection {
-    padding: 0 0 32px;
+    padding: 0 0 var(--mobile-section-gap);
   }
 
   .socialButtons {
     flex-direction: column;
-    gap: 12px;
+    gap: var(--mobile-social-gap);
     width: 100%;
   }
 
