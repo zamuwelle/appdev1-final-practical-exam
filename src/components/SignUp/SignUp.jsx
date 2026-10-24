@@ -1,4 +1,6 @@
 import blossomFlower from '../../assets/blossom-flower.svg'
+import googleLogo from '../../assets/icons-google-logo.svg'
+import appleLogo from '../../assets/icons-apple-logo.svg'
 import styles from './SignUp.module.css'
 
 function SignUp() {
@@ -47,6 +49,24 @@ function SignUp() {
             <button className={styles.submitButton} type="button">Signup</button>
           </div>
         </form>
+        <div className={styles.bottomSection}>
+          <div className={styles.divider}>
+            <span>Or</span>
+          </div>
+          <div className={styles.socialButtons}>
+            <button className={`${styles.socialButton} ${styles.googleButton}`} type="button">
+              <img className={styles.socialIcon} src={googleLogo} alt="" />
+              Sign in with Google
+            </button>
+            <button className={`${styles.socialButton} ${styles.appleButton}`} type="button">
+              <img className={styles.socialIcon} src={appleLogo} alt="" />
+              Sign in with Apple
+            </button>
+          </div>
+          <p className={styles.account}>
+            Have an account? <a className={styles.signIn} href="/login">Sign In</a>
+          </p>
+        </div>
       </section>
       <section className={styles.rightSection}>
         <img className={styles.blossom} src={blossomFlower} alt="Green blossom" />
