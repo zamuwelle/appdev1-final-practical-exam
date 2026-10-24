@@ -1,6 +1,7 @@
 import blossomFlower from '../../assets/blossom-flower.svg'
 import googleLogo from '../../assets/icons-google-logo.svg'
 import appleLogo from '../../assets/icons-apple-logo.svg'
+import { Input } from '../ui/input.jsx'
 import styles from './Login.module.css'
 
 function Login() {
@@ -12,7 +13,7 @@ function Login() {
         <form className={styles.form}>
           <div className={styles.field}>
             <label htmlFor="login-email">Email address</label>
-            <input
+            <Input
               className={styles.input}
               id="login-email"
               name="email"
@@ -25,7 +26,7 @@ function Login() {
               <label htmlFor="login-password">Password</label>
               <a className={styles.forgotPassword} href="#">forgot password</a>
             </div>
-            <input
+            <Input
               className={styles.input}
               id="login-password"
               name="password"
