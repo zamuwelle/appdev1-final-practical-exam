@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 :global(body) {
   margin: 0;
 }
@@ -16,6 +18,19 @@
   min-width: 0;
 }
 
+.leftSection {
+  padding: 124px 0 0 175px;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
 .blossom {
   display: block;
   width: 100%;
@@ -29,6 +44,6 @@
   }
 
   .leftSection {
-    display: none;
+    padding: 0 0 32px;
   }
 }
